@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.child{
+    width: calc(50% - 5px);
+    background-color: lightblue;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+.child.large{
+    width:calc(100% - 5px);
+}
+@media (max-width: 1024px){
+    .child{
+        width: calc(100% - 5px);
+    }
+}
