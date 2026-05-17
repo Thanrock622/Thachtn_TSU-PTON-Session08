@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.child{
+    width: calc(25% - 5px);
+    background-color: rgb(218, 122, 158);
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+@media (max-width: 1024px){
+    .child{
+        width: calc(50% - 5px);
+    }
+}
+@media (max-width: 768px){
+    .child{
+        width: calc(100% - 5px);
+    }
+}
